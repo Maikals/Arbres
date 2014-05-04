@@ -46,7 +46,7 @@ Arbre<pair<int,bool> > ie_emparejar(Arbre<pair<int,bool> >& a1, Arbre<pair<int,b
 	else if (not a2.es_buit()) {
 		++n2;
 		pair <int, bool> x = a2.arrel();
-		Arbre<pair<int,bool> > a21, a22, a31, a32;
+		Arbre<pair<int,bool> > a21, a22, a31, a32;  
 		a2.fills(a21, a22);
 		bool activa21, activa22;
 		activa21 = activa22 = false;
