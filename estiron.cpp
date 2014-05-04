@@ -1,9 +1,11 @@
 #include "utils.PRO2"
 #include "Arbre.hpp"
 
+int max;
+
 void escriure_arbre (Arbre<int>& a)
 {
-	if (not a.es_buit) {
+	if (not a.es_buit()) {
 		int x = a.arrel();
 		cout << x << " ";
 		Arbre <int> a1, a2;
